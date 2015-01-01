@@ -9,6 +9,9 @@
 	<groupId>us.henge</groupId>
 	<artifactId>web</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<properties>
+		<java.version>1.8</java.version>
+	</properties>
 	<build>
 		<plugins>
 			<plugin>
