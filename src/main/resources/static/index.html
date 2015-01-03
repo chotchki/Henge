@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="/photos/">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Folder Photo Listing">
+  <meta name="author" content="Christopher Hotchkiss">
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title ng-bind="$state.current.data.pageTitle"></title>
+</head>
+<body>
+  <div class="container">
+    <ul class="nav nav-pills nav-justified" role="tablist">
+      <li ui-sref-active="active">
+        <a ui-sref="rootStream">Album Stream</a>
+      </li>
+      <li ui-sref-active="active">
+        <a ui-sref="timeline">Album Timeline</a>
+      </li>
+    </ul>
+  </div>
+  <div class="container-fluid" ui-view></div>
+
+  <div class="footer">
+    <div class="container-fluid">
+      <p class="text-muted">All Rights Reserved  &copy; 2014 Christopher Hotchkiss</p>
+    </div>
+  </div>
+  <script data-main="main" src="//cdnjs.cloudflare.com/ajax/libs/require.js/2.1.15/require.min.js"></script>
+</body>
+</html>

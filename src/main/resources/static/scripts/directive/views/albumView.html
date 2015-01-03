@@ -1,0 +1,5 @@
+<div id="{{album.name}}">
+  <h3><small><a class="text-muted" ui-sref="album({album: album.name})">{{album.name}}</a></small></h3>
+  <br />
+  <img-delay-load ng-repeat="item in album.items" item="item" size-ratio="sizeRatio"></img-delay-load>
+</div>
